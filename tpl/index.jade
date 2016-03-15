@@ -10,6 +10,10 @@ html
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
 		script(src='/bootstrap/js/bootstrap.min.js')
 	body
+	.img-container
+				img(src='/images/batoré.jpg')
+				img(src='/images/asia.jpg')
+				img(src='/images/duds.jpg')
 		.container-fluid
 			center
 				h2
@@ -19,6 +23,7 @@ html
 					input#login.btn.btnprimary(type='button', value='Entrar')
 					input#ser-capitao(type="checkbox" name="capitao" value="1")
 					|  Vou ser capitão de um time
+
 				#lobby
 					#lista
 						| Lista de jogadores:
@@ -46,3 +51,7 @@ html
 							option(value='de_train') de_trem
 						input#seleciona-mapa.btn.btn-success(type='button', value='Votar!')
 						div#votacao
+	.img-container
+		img(src='/images/Magez.jpg')
+		img(src='/images/pzt.jpg')
+		img(src='/images/Pyro.jpg')

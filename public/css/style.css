@@ -1,9 +1,17 @@
+body {
+}
+
 .container-fluid {
 	padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1170px;
+}
+
+.img-container {
+	width: 100%;
+	margin: 30px;
 }
 
 #ser-capitao {

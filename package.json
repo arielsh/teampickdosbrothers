@@ -1,11 +1,22 @@
 {
-    "name": "CSGO-TeamPick",
-    "version": "0.0.0",
-    "description": "CSGO-TeamPick",
-    "dependencies": {
+  "name": "CSGO-TeamPick",
+  "version": "0.1",
+  "description": "CSGO-TeamPick",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
         "socket.io": "latest",
         "express": "latest",
         "jade": "latest"
-    },
-    "author": "Ariel"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arielsh/teampickdosbrothers"
+  },
+  "license": "MIT"
 }

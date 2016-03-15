@@ -1,6 +1,8 @@
 var express = require("express");
 var app = express();
-var port = 3700;
+
+app.set('port', (process.env.PORT || 5000));
+app.use(express.static(__dirname + '/public'));
 
 /*USO DA APLICACAO*/
 var capitaes = 0;
@@ -51,7 +53,7 @@ io.sockets.on('connection', function (socket) {
 
         }
 
-        if (jogadores == 10) {
+        if (jogadores == 2) {
 	    	io.sockets.emit('sala_completa');
     	}
 
@@ -146,5 +148,3 @@ app.engine('jade', require('jade').__express);
 app.get("/", function(req, res){
     res.render("index");
 });
-
-app.use(express.static(__dirname + '/public'));
