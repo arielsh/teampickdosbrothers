@@ -1,0 +1,11 @@
+{
+    "name": "CSGO-TeamPick",
+    "version": "0.0.0",
+    "description": "CSGO-TeamPick",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "jade": "latest"
+    },
+    "author": "Ariel"
+}

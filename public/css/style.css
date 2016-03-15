@@ -1,0 +1,43 @@
+.container-fluid {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+}
+
+#ser-capitao {
+	margin-left: 30px;
+}
+
+#lobby {
+	display: none;
+}
+
+#lista-jogadores {
+	height: 100%;
+}
+
+#jkp {
+	display: none;
+}
+
+#pedra, #papel, #tesoura {
+	height: 300px;
+	width: 300px;
+	border: none;
+	margin-right: 20px;
+	text-indent:-9999px;
+}
+
+#pedra {
+	background: url('/images/pedra.png');
+}
+
+#papel {
+	background: url('/images/papel.png');
+}
+
+#tesoura {
+	background: url('/images/tesoura.png');
+}

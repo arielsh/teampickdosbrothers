@@ -1,0 +1,48 @@
+doctype
+html
+	head
+		title= "CSGO:TEAMPICK"
+		script(src='/chat.js')
+		script(src='/socket.io/socket.io.js')
+		link(rel='stylesheet', href='/css/style.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+		script(src='/bootstrap/js/bootstrap.min.js')
+	body
+		.container-fluid
+			center
+				h2
+				#area-login
+					| Nick: 
+					input#nickname.form-control(style='width:350px;')
+					input#login.btn.btnprimary(type='button', value='Entrar')
+					input#ser-capitao(type="checkbox" name="capitao" value="1")
+					|  Vou ser capitão de um time
+				#lobby
+					#lista
+						| Lista de jogadores:
+						br
+						select#lista-jogadores.form-control(disabled)
+						input#seleciona-jogador.btn.btn-success(type='button', value='Escolher', disabled)
+					#time1
+						h3 Time 1: 
+					#time2
+						h3 Time 2:
+					#jkp
+						input#pedra.btn.btnprimary(type='button',value="PEDRA")
+						input#papel.btn.btnprimary(type='button',value="PAPEL")
+						input#tesoura.btn.btnprimary(type='button',value="TESOURA")
+					#lista-mapas
+						| Lista de Mapas:
+						br
+						select#lista-mapa.form-control
+							option(value='de_cache') de_creche
+							option(value='de_dust2') de_poeira2
+							option(value='de_inferno') de_inferno
+							option(value='de_mirage') de_mirraji
+							option(value='de_cobble') de_queda
+							option(value='de_overpass') de_overpasso
+							option(value='de_train') de_trem
+						input#seleciona-mapa.btn.btn-success(type='button', value='Votar!')
+						div#votacao
