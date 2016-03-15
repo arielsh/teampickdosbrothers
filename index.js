@@ -51,7 +51,7 @@ io.sockets.on('connection', function (socket) {
 
         }
 
-        if (jogadores == 2) {
+        if (jogadores == 10) {
 	    	io.sockets.emit('sala_completa');
     	}
 
