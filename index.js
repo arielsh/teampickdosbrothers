@@ -1,7 +1,8 @@
 var express = require("express");
 var app = express();
 
-app.set('port', (process.env.PORT));
+app.set('port', (process.env.PORT || 3000));
+
 app.use(express.static(__dirname + '/public'));
 
 /*USO DA APLICACAO*/
@@ -17,7 +18,7 @@ var turno = 0;
 /*CONTROLE VOTACAO DE MAPAS*/
 var de_cache = 0, de_cobble = 0, de_dust2 = 0, de_inferno = 0, de_mirage = 0, de_overpass = 0, de_train = 0;
  
-var io = require('socket.io').listen(app.listen(port));
+var io = require('socket.io').listen(app.listen(process.env.PORT));
 
 io.sockets.on('connection', function (socket) {
 
@@ -138,9 +139,6 @@ io.sockets.on('connection', function (socket) {
     });
 
 });
-
-
-console.log("Listening on port " + port);
 
 app.set('views', __dirname + '/tpl');
 app.set('view engine', "jade");

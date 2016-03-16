@@ -1,7 +1,7 @@
 window.onload = function() {
  
     var users = [];
-    var socket = io.connect('0.0.0.0');
+    var socket = io.connect('http://localhost:3700');
     var nickname = document.getElementById("nickname");
     var btnLogin = document.getElementById("login");
     var areaLogin = document.getElementById("area-login");

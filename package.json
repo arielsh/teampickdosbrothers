@@ -2,10 +2,7 @@
   "name": "CSGO-TeamPick",
   "version": "0.1",
   "description": "CSGO-TeamPick",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
+  "main": "app.js",
   "dependencies": {
         "socket.io": "latest",
         "express": "latest",
